@@ -1,3 +1,3 @@
 # Efect-Title
-# Puramente para intuitos de estudo em Css
-# uso free 
+# Purely for Css study purposes
+# Free use 
