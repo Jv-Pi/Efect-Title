@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efect title</title>
+    <link rel="shortcut icon" href="https://www.flaticon.com/svg/vstatic/svg/25/25018.svg?token=exp=1614285962~hmac=ea055791f50601e732ac3c161b47edcf" type="image/x-icon">
+</head>
+<style>
+    body {
+        margin: 0;
+        background: #000000;
+    }
+    
+    #main {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+    }
+    
+    #box1 {
+        width: 350px;
+        height: 625px;
+        background-image: url(https://s1.1zoom.me/b5050/79/Supernatural_beings_Deer_Woman_Silhouette_Horns_546834_1920x1080.jpg);
+        position: absolute;
+        bottom: -100%;
+        left: 30%;
+        animation: box1 2s forwards, box2 3s forwards 3s;
+    }
+    
+    #box1::after {
+        content: '';
+        position: absolute;
+        width: 530px;
+        height: 625px;
+        background-image: url(https://s1.1zoom.me/b5050/79/Supernatural_beings_Deer_Woman_Silhouette_Horns_546834_1920x1080.jpg);
+        left: 0px;
+        z-index: -1;
+    }
+    
+    @keyframes box1 {
+        from {
+            bottom: -100%;
+        }
+        to {
+            bottom: 0%;
+        }
+    }
+    
+    @keyframes box2 {
+        from {
+            left: 30%;
+            width: 530px;
+        }
+        to {
+            width: 0px;
+            left: 50%;
+        }
+    }
+    
+    #box2 {
+        width: auto;
+        height: auto;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        font-size: 10em;
+        line-height: 130px;
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        overflow: hidden;
+    }
+    
+    #text-title {
+        position: relative;
+        left: -100%;
+        animation: textAnimation 2s forwards 3s;
+    }
+    
+    @keyframes textAnimation {
+        from {
+            left: -100vh;
+        }
+        to {
+            left: 0;
+        }
+    }
+    
+    #box3 {
+        width: 100%;
+        position: absolute;
+        top: -100%;
+        animation: box3 2s forwards 2.5s;
+    }
+    
+    #container {
+        width: 100%;
+        position: absolute;
+        top: -100%;
+        animation: contAnimation 2s forwards 2.5s;
+    }
+    
+    #logo {
+        float: left;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    
+    #logo img {
+        width: 50%;
+    }
+    
+    #menu {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-right: 150px;
+        margin-top: 20px;
+        float: right;
+    }
+    
+    #menu ul {
+        list-style: none;
+    }
+    
+    #menu ul li {
+        display: inline-block;
+        margin-left: 100%;
+    }
+    
+    @keyframes contAnimation {
+        from {
+            top: -100%;
+        }
+        to {
+            top: 0;
+        }
+    }
+    
+    footer {
+        color: rgb(255, 255, 255);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <div id="box1"></div>
+        <div id="box2">
+            <div id="text-title">
+                BUILDING POWER
+            </div>
+        </div>
+        <div id="box3">
+            <div id="container">
+                <div id="logo">
+                    <img src="" alt="" srcset="">
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li>HOME</li>
+                        <li>SERVICES</li>
+                        <li>HELP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>By Joao Victor Pires</footer>
+</body>
+
+</html>
